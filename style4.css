@@ -1,0 +1,168 @@
+/* style.css */
+html{
+    height: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.logo{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  width: 85px;
+}
+
+.navbar{
+  font-style: normal;
+  font-family: Times New Roman;
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+} 
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #293d5a;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #293d5a;
+}
+
+tr:nth-child(even) {
+    background-color: #293d5a;
+}
+
+tr:hover {
+    background-color: #61779a;
+}
+
+.inputbox_payroll {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.inputbox_payroll input {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.delete {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row; /* Arrange buttons in a row */
+    align-items: center; 
+    float: left;
+}
+
+button {
+    display: block;
+    border-radius: 2em;
+    background-color:#293d5a;
+    box-shadow: 0 3px 10px 0 black(90, 136, 209);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom:20px;
+    float: left;
+}
+  
+  
+  button:hover {
+      background-color: none;
+  }
+  
+  button:active {
+    background-color: #293d5a;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.rmv {
+    padding: 8px 16px;
+    background-color: #293d5a;
+    color: black;
+    font-weight: 100;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.rmv:hover {
+    background-color: #61779a;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Images/Background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.result #result {
+color: #293d5a;
+}

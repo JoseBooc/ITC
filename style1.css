@@ -1,0 +1,111 @@
+html{
+height: 100%;
+}
+
+.logo{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  width: 85px;
+} 
+
+h2{
+  font-style: italic;
+  color: #fff;
+}
+
+p{
+  font-family: 'Helvetica';
+  font-size: 20px;
+}
+
+.colored-span {
+  color: red;
+}
+
+.inputbox {
+margin: 30px;
+}
+  
+.inputbox input {
+padding: 5px;
+border: 1px solid #ccc;
+}
+  
+.inputbox span {
+color:red; 
+font-style: italic;
+}  
+
+main{
+max-width: 600px;
+margin: auto;
+text-align: center;
+}
+
+.select_container,
+.inputbox,
+.btn_container,
+.result {
+    margin-top: 20px;
+}
+
+.navbar{
+  font-style: normal;
+  font-family: Times New Roman;
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+body{
+background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Images/Background2.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; 
+}
+
+.result #result {
+color: red; 
+}
+  
